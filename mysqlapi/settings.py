@@ -19,7 +19,7 @@ DATABASES = {
         "USER": os.environ.get("MYSQLAPI_DB_USER", "root"),
         "PASSWORD": os.environ.get("MYSQLAPI_DB_PASSWORD", ""),
         "HOST": os.environ.get("MYSQLAPI_DB_HOST", "localhost"),
-        "PORT": "",
+        "PORT": os.environ.get("MYSQLAPI_DB_PORT", ""),
         "TEST_NAME": "test_api",
     }
 }
